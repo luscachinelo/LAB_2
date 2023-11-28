@@ -22,7 +22,7 @@ def corret_length(word):
     
     return False
 
-def get_secret_word(): #Remova espaços em branco e quebras de linha de cada palavra
+def get_secret_word(): 
 
     file = open("words.txt", "r")
 
@@ -36,7 +36,7 @@ def get_secret_word(): #Remova espaços em branco e quebras de linha de cada pal
 def check_word(word):
 
     file = open('drawn_words.txt', 'r') 
-    if word in file: # verifica se a palavra está no arquivo
+    if word in file: 
         file.close()
         return False
     file.close()
@@ -52,7 +52,7 @@ def add_word(word):
 
     return True
 
-def clean_draw_words(): # função pra limpar o  arquivo
+def clean_draw_words():
   
     file = open('drawn_words.txt', 'w')
 
